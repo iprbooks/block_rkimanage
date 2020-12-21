@@ -1,0 +1,6 @@
+{
+  "require": {
+    "iprbooks/iprbooks-rki-sdk": "dev-main",
+    "firebase/php-jwt": "5.0.0"
+  }
+}

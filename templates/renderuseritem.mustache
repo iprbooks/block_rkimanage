@@ -1,0 +1,31 @@
+<div class="rki-user-item" data-id="{{ id }}">
+    <div class="row">
+        <div class="col-sm-8">
+            <div id='rki-user-id-{{ id }}'><strong>ID:</strong> {{ id }} </div>
+            <div id='rki-user-username-{{ id }}'><strong>Логин:</strong> {{ username }} </div>
+            <div id='rki-user-fullname-{{ id }}'><strong>ФИО:</strong> {{ fullname }} </div>
+            <div id='rki-user-email-{{ id }}'><strong>Email:</strong> {{ email }} </div>
+            <div id='rki-user-blocked-{{ id }}'><strong>Заблокирован:</strong> {{ blocked }} </div>
+            <div id='rki-user-user_type-{{ id }}'><strong>Тип пользователя:</strong> {{ user_type }} </div>
+            <div id='rki-user-class-{{ id }}'><strong>Класс:</strong> {{ class }} </div>
+            <div id='rki-user-specialty-{{ id }}'><strong>Специальность:</strong> {{ specialty }} </div>
+            <div id='rki-user-group-{{ id }}'><strong>Группа:</strong> {{ group }} </div>
+            <div id='rki-user-facultet-{{ id }}'><strong>Факультет:</strong> {{ facultet }} </div>
+            <div id='rki-user-department-{{ id }}'><strong>Отдел:</strong> {{ department }} </div>
+            <div id='rki-user-registration_date-{{ id }}'><strong>Дата регистрации:</strong> {{ registration_date }}
+            </div>
+            <div id='rki-user-blockedafter-{{ id }}'><strong>Дата окончания подписки:</strong> {{ blockedafter }} </div>
+        </div>
+        <div class="col-sm-1">
+
+
+            {{#block}}
+                <a style="" class="btn btn-secondary rki-user-block" data-id="{{id}}" href="#block">Заблокировать</a>
+            {{/block}}
+            {{#unblock}}
+                <a style="" class="btn btn-secondary rki-user-unblock" data-id="{{id}}" href="#unblock">Восстановить</a>
+            {{/unblock}}
+
+        </div>
+    </div>
+</div>

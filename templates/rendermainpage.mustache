@@ -1,0 +1,80 @@
+<div>
+    <ul class="nav nav-tabs" id="rkibooks-tab" role="tablist">
+        <li class="nav-item">
+            <a class="rkibooksmanage-nav-link nav-link active rki-tab" id="book-tab" data-type="user" data-toggle="tab"
+               href="#u" role="tab"
+               aria-controls="user" aria-selected="true">Пользователи РКИ</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="rki-tab-content">
+        <div class="rkibooksmanage-tab-pane tab-pane show active" id="rkibooksmanage-user" role="tabpanel"
+             aria-labelledby="user-tab">
+            <br>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="rki-filter-user-email">Email</label>
+                        <input type="text" class="rkibooksmanage-form-control form-control rkimanage-filter"
+                               id="rki-filter-user-email"
+                               placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="rki-filter-user-login">Логин</label>
+                        <input type="text" class="rkibooksmanage-form-control form-control rkimanage-filter"
+                               id="rki-filter-user-login"
+                               placeholder="Логин">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="rki-filter-user-fio">ФИО</label>
+                        <input type="text" class="rkibooksmanage-form-control form-control rkimanage-filter"
+                               id="rki-filter-user-fio"
+                               placeholder="Фамилия Имя Отчество">
+                    </div>
+                </div>
+            </form>
+
+            <div id="rki-content">
+                <a id="rkibooksmanage-filter-apply" class="btn btn-secondary">Найти</a>
+                <a id="rkibooksmanage-filter-clear" class="btn btn-secondary">Очистить</a>
+                <br>
+                <br>
+                <div class="row">
+                    <div id="rki-user-list" class="col-sm">
+                        <!--list-->
+                    </div>
+                    <div id="rki-user-details" class="col-sm">
+                        <h3 style="text-align: center;">Регистрация пользователя</h3>
+
+                        <div class="form-group col-md">
+                            <label for="user-email">Email</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="user-fio">ФИО</label>
+                            <input type="text" class="form-control" id="user-fio"
+                                   placeholder="Фамилия Имя Отчество">
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="user-pass">Пароль</label>
+                            <input type="password" class="form-control" id="user-pass">
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="user-type">Тип пользователя</label>
+                            <select class="form-control" id="user-type">
+                                <option value="1">Студент</option>
+                                <option value="2">Аспирант</option>
+                                <option value="3">Преподаватель</option>
+                                <option value="4">Другой</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md">
+                            <a id="rki-user-register" class="btn btn-secondary" href="#register">Зарегистрировать</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
